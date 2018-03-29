@@ -11,5 +11,5 @@ Landing page for toolsnippy.com
 
 ## Contributor(s)
 
-* Shouvik Mukherjee - [@ishouvik](https://twitter.com/ishouvik) | [contact(at)ishouvik.com](mailto:contact@ishouvik.com)
-* Vivek SP. - [@viveksp](https://twitter.com/viveksp) | [contact(at)ishouvik.com](mailto:vivek.sp@gmail.com)
+* Shouvik Mukherjee - [@ishouvik](https://twitter.com/ishouvik)
+* Vivek SP. - [@viveksp](https://twitter.com/viveksp)
