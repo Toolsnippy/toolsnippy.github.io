@@ -17,7 +17,17 @@ body {
   margin-bottom: 1.5em;
 }
 
+.nav-pills > li > .nav-link {
+  color: #333;
+}
 
-.btn, .nav-pills > li > .nav-link {
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background: #a5710f;
+}
+code {
+  color: #a5710f;
+}
+
+.btn, .nav-pills > li > .nav-link, .form-control {
   border-radius: 2px;
 }
