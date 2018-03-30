@@ -18,7 +18,12 @@ body {
 }
 
 .nav-pills > li > .nav-link {
+  background: #f4c68d;
   color: #333;
+}
+
+.nav-pills > li:last-child > .nav-link {
+  margin-left: 10px;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
