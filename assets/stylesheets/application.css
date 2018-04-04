@@ -8,23 +8,25 @@ body {
   opacity: 0.95;
 }
 
-#intro {
+.intro {
   padding-top: 70px;
   /* min-height: 80vh; */
-  background: #f6f8f7;
+  /* background: #ffffff url("../images/intro-bg.png") no-repeat right; */
+  background: #EBECED;
 }
 
-#intro h1, #intro h2 {
+.intro h1, .intro h2 {
   text-transform: capitalize;
   text-shadow: 2px 2px 2px #ffffff;
 }
 
-#intro h1 {
-  font-size: 180%;
+.intro h1 {
+  line-height: 185%;
+  font-size: 1.7em;
 }
 
-#intro h2 {
-  font-size: 130%;
+.intro h2 {
+  font-size: 1.3em;
 }
 
 .nav-pills > li > .nav-link {
