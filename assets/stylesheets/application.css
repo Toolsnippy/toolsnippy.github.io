@@ -3,8 +3,14 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+#primary-nav {
+  text-transform: uppercase;
+  opacity: 0.95;
+}
+
 #intro {
   padding-top: 70px;
+  /* min-height: 80vh; */
   background: #f6f8f7;
 }
 
@@ -35,4 +41,25 @@ body {
 }
 code {
   color: #a5710f;
+}
+
+
+/* CAROUSEL OVERRIDE */
+.carousel-indicators {
+  position: relative;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #dedede;
+}
+.carousel-indicators .active {
+    background-color: #333333;
 }
