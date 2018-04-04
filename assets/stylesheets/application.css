@@ -6,7 +6,7 @@ body {
 #intro {
   padding-top: 70px;
   min-height: 80vh;
-  background: #f4f4f4 url("../images/intro-imac.gif") center bottom no-repeat;
+  background: #f6f8f7 url("../images/intro-imac.gif") center bottom no-repeat;
 }
 
 #intro h1, #intro h2 {
