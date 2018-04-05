@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="./assets/stylesheets/application.css">
   <link rel="stylesheet" href="./vendors/assets/stylesheets/animate.min.css">
+  <link rel="stylesheet" href="./vendors/assets/stylesheets/word-rotator.css">
 
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -52,7 +53,7 @@
     </div>
   </nav>
 
-  <section id="intro" class="intro">
+  <section id="intro" class="intro wow fadeIn">
     <div class="container-fluid">
       <div class="row d-flex">
         <div class="col-lg-7 justify-content-center align-self-center">
@@ -293,45 +294,28 @@
   <script src="./vendors/assets/javascripts/wow.min.js"></script>
   <script src="./vendors/assets/javascripts/particles/particles.js"></script>
   <script src="./vendors/assets/javascripts/particles/app.js"></script>
+  <script src="./vendors/assets/javascripts/jquery.word-rotator.js"></script>
 
   <script>
     new WOW().init();
   </script>
 
-  <script>
-    // Define initial variables.
-      var words = [
-        "You are not over-spending on technology?",
-        "Your technology is the best for your business?",
-        "Your business is not suffering due to tech-debt?"
-      ];
-      var count = 0;
-
-      /*
-       * The reason we do the following twice is because setInterval won't
-       * initially call the changeWord function until 3 seconds has passed,
-       * by doing it once first we make sure that we are changing the word
-       * as soon as it starts.
-       */
-
-      changeWord(); // Call the changeWord function
-      setInterval(changeWord, 3000); // Call it every 3 seconds
-
-      function changeWord() {
-
-        // Define the word to create
-        var current_word = words[count];
-        console.log(current_word);
-
-        // Change the word in the HTML
-        $("#rotateSubTitle").html(current_word);
-
-        // Get the next word index in the array
-        count++;
-
-        // If we've reached the end of the word list, go back to the start
-        if (count == words.length) { count = 0; }
-      }
+  <script type="text/javascript">
+    $(function () {
+      $("#rotateSubTitle").wordsrotator({
+        words: [
+          "You are not over-spending on technology?",
+          "Your technology is the best for your business?",
+          "Your business is not suffering due to tech-debt?"
+        ], // Array of words, it may contain HTML values
+        randomize: false, //show random entries from the words array
+        stopOnHover: false, //stop animation on hover
+        changeOnClick: false, //force animation run on click
+        animationIn: "fadeInRight", //css class for entrace animation
+        animationOut: "fadeOut", //css class for exit animation
+        speed: 3000 // delay in milliseconds between two words
+      });
+    });
   </script>
 </body>
 </html>
