@@ -46,6 +46,10 @@ code {
 }
 
 
+.text-brown {
+  color: #aa6c01;
+}
+
 /* CAROUSEL OVERRIDE */
 .carousel-indicators {
   position: relative;
