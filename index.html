@@ -59,7 +59,9 @@
             Technology auditors for your business
           </h1>
 
-          <h2 class="pt-3 pb-3">Talk to our Strategist to get a free audit report</h2>
+          <h2 class="pt-3 pb-3">
+            Are you sure <span id="rotateSubTitle"></span>
+          </h2>
 
           <div id="mc_embed_signup">
             <form action="https://toolsnippy.us12.list-manage.com/subscribe/post?u=15c3e4da8d781e15544ad7be6&amp;id=7738b00759" method="post"
@@ -289,5 +291,41 @@
   <!-- scripts -->
   <script src="./vendors/assets/javascripts/particles/particles.js"></script>
   <script src="./vendors/assets/javascripts/particles/app.js"></script>
+
+  <script>
+    // Define initial variables.
+      var words = [
+        "You are not over-spending on technology?",
+        "Your technology is the best for your business?",
+        "Your business is not suffering due to tech-debt?"
+      ];
+      var count = 0;
+
+      /*
+       * The reason we do the following twice is because setInterval won't
+       * initially call the changeWord function until 3 seconds has passed,
+       * by doing it once first we make sure that we are changing the word
+       * as soon as it starts.
+       */
+
+      changeWord(); // Call the changeWord function
+      setInterval(changeWord, 3000); // Call it every 3 seconds
+
+      function changeWord() {
+
+        // Define the word to create
+        var current_word = words[count];
+        console.log(current_word);
+
+        // Change the word in the HTML
+        $("#rotateSubTitle").html(current_word);
+
+        // Get the next word index in the array
+        count++;
+
+        // If we've reached the end of the word list, go back to the start
+        if (count == words.length) { count = 0; }
+      }
+  </script>
 </body>
 </html>
