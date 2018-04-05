@@ -7,6 +7,7 @@
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="./assets/stylesheets/application.css">
+  <link rel="stylesheet" href="./vendors/assets/stylesheets/animate.min.css">
 
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -172,7 +173,7 @@
       <hr />
 
       <div class="card-group">
-        <div class="card border-0">
+        <div class="card border-0 wow fadeInLeft">
           <div class="card-body">
             <p class="text-center text-warning">
               <i class="fa fa-code fa-4x"></i>
@@ -188,7 +189,7 @@
             </p>
           </div>
         </div>
-        <div class="card border-0">
+        <div class="card border-0 wow fadeIn">
           <div class="card-body">
             <p class="text-center text-warning">
               <i class="fa fa-users fa-4x"></i>
@@ -204,7 +205,7 @@
             </p>
           </div>
         </div>
-        <div class="card border-0">
+        <div class="card border-0 wow fadeInRight">
           <div class="card-body">
             <p class="text-center text-warning">
               <i class="fa fa-wrench fa-4x"></i>
@@ -289,8 +290,13 @@
   </section>
 
   <!-- scripts -->
+  <script src="./vendors/assets/javascripts/wow.min.js"></script>
   <script src="./vendors/assets/javascripts/particles/particles.js"></script>
   <script src="./vendors/assets/javascripts/particles/app.js"></script>
+
+  <script>
+    new WOW().init();
+  </script>
 
   <script>
     // Define initial variables.
