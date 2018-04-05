@@ -15,13 +15,16 @@ body {
   background: #EBECED;
 }
 
-.intro h1, .intro h2 {
+.intro h1,
+.intro .h1,
+.intro h2,
+.intro .h2 {
+  line-height: 150%;
   text-transform: capitalize;
   text-shadow: 2px 2px 2px #ffffff;
 }
 
 .intro h1, .intro .h1 {
-  line-height: 185%;
   font-size: 170%;
 }
 
