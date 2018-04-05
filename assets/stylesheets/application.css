@@ -20,9 +20,9 @@ body {
   text-shadow: 2px 2px 2px #ffffff;
 }
 
-.intro h1 {
+.intro h1, .intro .h1 {
   line-height: 185%;
-  font-size: 1.7em;
+  font-size: 170%;
 }
 
 .intro h2 {
@@ -45,6 +45,10 @@ code {
   color: #a5710f;
 }
 
+
+.text-brown {
+  color: #aa6c01;
+}
 
 /* CAROUSEL OVERRIDE */
 .carousel-indicators {
