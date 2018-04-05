@@ -15,14 +15,17 @@ body {
   background: #EBECED;
 }
 
-.intro h1, .intro h2 {
+.intro h1,
+.intro .h1,
+.intro h2,
+.intro .h2 {
+  line-height: 150%;
   text-transform: capitalize;
   text-shadow: 2px 2px 2px #ffffff;
 }
 
-.intro h1 {
-  line-height: 185%;
-  font-size: 1.7em;
+.intro h1, .intro .h1 {
+  font-size: 170%;
 }
 
 .intro h2 {
@@ -45,6 +48,10 @@ code {
   color: #a5710f;
 }
 
+
+.text-brown {
+  color: #aa6c01;
+}
 
 /* CAROUSEL OVERRIDE */
 .carousel-indicators {

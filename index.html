@@ -7,7 +7,7 @@
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="./assets/stylesheets/application.css">
-
+  <link rel="stylesheet" href="./vendors/assets/stylesheets/animate.min.css">
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -17,11 +17,12 @@
     crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
     crossorigin="anonymous"></script>
+
   <link rel="shortcut icon" type="image/png" href="./assets/images/toolsnippy-icon.png" />
   <link rel="apple-touch-icon" href="./assets/images/toolsnippy-icon.png" />
 
-  <title>ToolSnippy.com</title>
-  <meta name="description" content="Find experts to identify and help you with the best marketing and tech tools for your venture"
+  <title>ToolSnippy.com - Technology and tools auditing for your business</title>
+  <meta name="description" content="Get access to Industry leaders and experts from Fortune 500 companies"
   />
   <meta name="keywords" content="application, ios, android, seo, productivity, marketing, digital-marketing, technology, tool, stack, best-stack, expert, hire expert, community, appstore, playstore">
   <meta name="og:image" content="https://toolsnippy.com/assets/images/toolsnippy-icon.png" />
@@ -39,8 +40,11 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
+        <li class="nav-item sr-only">
           <a class="nav-link" href="#intro">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#why-choose-us" class="nav-link">Why Us?</a>
         </li>
         <li class="nav-item">
           <a href="#business" class="nav-link">For Businesses</a>
@@ -55,13 +59,15 @@
     <div class="container-fluid">
       <div class="row d-flex">
         <div class="col-lg-7 justify-content-center align-self-center">
-          <h1 class="my-4">
-            Are you using the right tools &amp; technology for your business?
+          <h1 class="mt-3 mb-4 mb-lg-3">
+            Technology and tools auditing for your business
           </h1>
 
-          <h2 class="pt-3 pb-3">Talk to our Strategist to get a free audit report</h2>
+          <h2 class="mb-3">
+            Get access to Industry leaders and experts from Fortune 500 companies
+          </h2>
 
-          <div id="mc_embed_signup">
+          <div id="mc_embed_signup" class="pt-3">
             <form action="https://toolsnippy.us12.list-manage.com/subscribe/post?u=15c3e4da8d781e15544ad7be6&amp;id=7738b00759" method="post"
               id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate pt-3" target="_blank" novalidate>
               <div id="mc_embed_signup_scroll">
@@ -82,7 +88,7 @@
                     </div>
                   </div>
                   <div class="clear form-actions col-md-5">
-                    <input type="submit" value="GET YOUR FREE AUDIT" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg btn-block btn-warning button">
+                    <input type="submit" value="GET ONE FREE AUDIT" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg btn-block btn-warning button">
                   </div>
                 </div>
               </div>
@@ -97,55 +103,10 @@
     </div>
   </section>
 
-  <section id="intro-ribbon" class="py-5 my-3">
+  <section id="appstore-badges" class="py-3">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-8 case-studies">
-          <div id="carouselCaseStudyIndicators" class="carousel slide" data-ride="carousel" data-interval="2000">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="card border-0">
-                  <div class="card-body">
-                    <p class="card-text text-muted">
-                      <strong>HP Loses Customers:</strong> Issues in SAP implementation cost the company <span class="text-dark">$160 million</span> in revenue.
-                    </p>
-                    &nbsp;
-                  </div>
-                </div>
-                <!-- /.card -->
-              </div>
-              <div class="carousel-item">
-                <div class="card border-0">
-                  <div class="card-body">
-                    <p class="card-text text-muted">
-                      <strong>Nike Class Action Lawsuits:</strong> After implementing a <span class="text-dark">$400 million</span> i2 ERP the company lost <span class="text-dark">$100 million</span> in sales.
-                    </p>
-                    &nbsp;
-                  </div>
-                </div>
-                <!-- /.card -->
-              </div>
-              <div class="carousel-item">
-                <div class="card border-0">
-                  <div class="card-body">
-                    <p class="card-text text-muted">
-                      <strong>Hershey’s Halloween Losses</strong> Issues in SAP implementation caused Hershey's to miss out on the crucial Halloween season at a cost of approximately <span class="text-dark">$100 million</span>.
-                    </p>
-                  </div>
-                </div>
-                <!-- /.card -->
-              </div>
-            </div>
-
-            <ol class="carousel-indicators mt-3">
-              <li data-target="#carouselCaseStudyIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselCaseStudyIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselCaseStudyIndicators" data-slide-to="2"></li>
-            </ol>
-          </div>
-        </div> <!-- /.case-studies -->
-
-        <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+        <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 ml-lg-auto">
           <p class="text-center">
             <a target="blank" href="https://itunes.apple.com/us/app/toolsnippy/id1367337521">
               <img class="img-fluid" alt="Get it on Google Play" src="./assets/images/appstore-badge.png" />
@@ -164,13 +125,46 @@
     </div>
   </section>
 
+  <section id="why-choose-us" class="py-3 mb-5">
+    <div class="container-fluid">
+      <div class="card">
+        <div class="card-body py-5">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3 class="text-center mb-3">
+                <i class="fas fa-check text-success"></i>
+                We Are
+              </h3>
+
+              <p class="wow fadeIn">
+                We are a platform of experts providing unbiased analysis and information about the right tools and technology to be used
+                in your business.
+              </p>
+            </div>
+
+            <div class="col-lg-6">
+              <h3 class="text-center mb-3">
+                <i class="fas fa-times"></i>
+                We Are <strike>Not</strike>
+              </h3>
+
+              <p class="wow fadeIn">
+                First let us get <em>what we are not</em> out of the way. We are NOT a software development company.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="business" class="mb-5 py-3">
     <div class="container-fluid">
       <h3 class="text-center">We Assist Businesses</h3>
       <hr />
 
       <div class="card-group">
-        <div class="card border-0">
+        <div class="card border-0 wow fadeInLeft">
           <div class="card-body">
             <p class="text-center text-warning">
               <i class="fa fa-code fa-4x"></i>
@@ -186,7 +180,7 @@
             </p>
           </div>
         </div>
-        <div class="card border-0">
+        <div class="card border-0 wow fadeIn">
           <div class="card-body">
             <p class="text-center text-warning">
               <i class="fa fa-users fa-4x"></i>
@@ -202,7 +196,7 @@
             </p>
           </div>
         </div>
-        <div class="card border-0">
+        <div class="card border-0 wow fadeInRight">
           <div class="card-body">
             <p class="text-center text-warning">
               <i class="fa fa-wrench fa-4x"></i>
@@ -287,7 +281,10 @@
   </section>
 
   <!-- scripts -->
-  <script src="./vendors/assets/javascripts/particles/particles.js"></script>
-  <script src="./vendors/assets/javascripts/particles/app.js"></script>
+  <script src="./vendors/assets/javascripts/wow.min.js"></script>
+
+  <script>
+    new WOW().init();
+  </script>
 </body>
 </html>
