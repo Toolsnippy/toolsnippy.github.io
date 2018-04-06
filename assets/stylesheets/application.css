@@ -11,8 +11,7 @@ body {
 .intro {
   padding-top: 70px;
   /* min-height: 80vh; */
-  /* background: #ffffff url("../images/intro-bg.png") no-repeat right; */
-  background: #EBECED;
+  background: #ffffff url("../images/intro-bg.png") fixed;
 }
 
 .intro h1,
@@ -21,7 +20,6 @@ body {
 .intro .h2 {
   line-height: 150%;
   text-transform: capitalize;
-  text-shadow: 2px 2px 2px #ffffff;
 }
 
 .intro h1, .intro .h1 {
